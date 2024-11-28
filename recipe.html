@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Recipe</title>
+    <style>
+        /* Style the print button */
+        .print-button {
+            font-size: 24px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .print-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="images/logo-png.png" alt="logo" />
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Home | </a>
+          <a href="about_diabeties.html">About Diabeties | </a>
+          <a href="food&nutrition.html">Food & Nutrition | </a>
+          <a href="health&welnness.html">Health & Wellness | </a>
+          <a href="contact.html">Contact Us | </a>
+          <a href="log-in.php">Login</a>
+        </div>
+      </nav>
+    </header>
+     <button class="print-button" onclick="window.print()">
+        <i class="fas fa-print"></i> Print Page
+    </button>
+
+   <section class="recipes">
+    <div class="breakfast">
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Breakfast Recipes</h1>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            <!-- Recipe Card 1: Vegetable Omelet -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/greek-yoghurt.jpg" class="card-img-top" style="height: 40vh;"  alt="Greek Yogurt Parfait">
+                    <div class="card-body">
+                        <h5 class="card-title">Greek Yogurt Parfait</h5>
+                        <p><strong>Delicious and refreshing parfait for a perfect morning!</strong></p>
+                        <!-- Collapsible Ingredients -->
+                         <a href="#ingredients2">Ingredients</a>
+                        <div class="" id="ingredients2">
+                            <ul>
+                                <li>1 cup unsweetened Greek yogurt</li>
+                                <li>½ cup fresh berries</li>
+                                <li>1 tbsp chia seeds</li>
+                                <li>1 tsp vanilla extract</li>
+                            </ul>
+                        </div>
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions2" role="button" aria-expanded="false" aria-controls="instructions2">Instructions</a>
+                        <div class="" id="instructions2">
+                            <ol>
+                                <li>Layer Greek yogurt, berries, and chia seeds in a glass.</li>
+                                <li>Repeat layers for a parfait-style presentation.</li>
+                                <li>Add a drizzle of vanilla extract on top and serve.</li>
+                            </ol>
+                        </div>
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition2" role="button" aria-expanded="false" aria-controls="nutrition2">Nutrition</a>
+                        <div class="" id="nutrition2">
+                            <ul>
+                                <li>Calories: 140</li>
+                                <li>Protein: 12g</li>
+                                <li>Carbs: 10g</li>
+                                <li>Fat: 3g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 2: Greek Yogurt Parfait -->
+            
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/veggie-omlet.webp" class="card-img-top img-fluid" style="height: 40vh;"   alt="Vegetable Omelet">
+                    <div class="card-body">
+                        <h5 class="card-title">Vegetable Omelet</h5>
+                        <p><strong>A healthy and tasty start to your day!</strong></p>
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients1" role="button" aria-expanded="false" aria-controls="ingredients1">Ingredients</a>
+                        <div class="" >
+                            <ul class="text-black" id="ingredients1">
+                                <li>3 large egg whites</li>
+                                <li>1 cup spinach</li>
+                                <li>½ cup diced tomatoes</li>
+                                <li>½ cup sliced mushrooms</li>
+                                <li>1 tbsp olive oil</li>
+                                <li>Salt and pepper to taste</li>
+                            </ul>
+                        </div>
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions1" role="button" aria-expanded="false" aria-controls="instructions1">Instructions</a>
+                        <div class="" id="instructions1">
+                            <ol class="text-black">
+                                <li>Heat olive oil in a non-stick pan over medium heat.</li>
+                                <li>Cook mushrooms until soft (2–3 minutes).</li>
+                                <li>Add spinach and tomatoes, cooking for 1–2 minutes.</li>
+                                <li>Pour egg whites over the vegetables and cook until firm.</li>
+                                <li>Fold the omelet in half and serve.</li>
+                            </ol>
+                        </div>
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition1" role="button" aria-expanded="false" aria-controls="nutrition1">Nutrition</a>
+                        <div class="" id="nutrition1">
+                            <ul>
+                                <li>Calories: 120</li>
+                                <li>Protein: 10g</li>
+                                <li>Carbs: 4g</li>
+                                <li>Fat: 6g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe Card 3: Avocado Toast -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/avocado-toast.jpg" class="card-img-top img-fluid" style="height: 40vh;" alt="Avocado Toast">
+                    <div class="card-body">
+                        <h5 class="card-title">Avocado Toast</h5>
+                        <p><strong>Simple and delicious for a quick, healthy meal!</strong></p>
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients3" role="button" aria-expanded="false" aria-controls="ingredients3">Ingredients</a>
+                        <div class="" id="ingredients3">
+                            <ul>
+                                <li>1 slice whole-grain bread</li>
+                                <li>½ avocado, mashed</li>
+                                <li>Pinch of chili flakes</li>
+                                <li>Salt to taste</li>
+                            </ul>
+                        </div>
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions3" role="button" aria-expanded="false" aria-controls="instructions3">Instructions</a>
+                        <div class="" id="instructions3">
+                            <ol>
+                                <li>Toast the bread slice until golden brown.</li>
+                                <li>Spread mashed avocado evenly on the toast.</li>
+                                <li>Sprinkle chili flakes and a pinch of salt.</li>
+                                <li>Serve immediately.</li>
+                            </ol>
+                        </div>
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition3" role="button" aria-expanded="false" aria-controls="nutrition3">Nutrition</a>
+                        <div class="" id="nutrition3">
+                            <ul>
+                                <li>Calories: 180</li>
+                                <li>Protein: 4g</li>
+                                <li>Carbs: 16g</li>
+                                <li>Fat: 12g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Steel-Cut Oats with Cinnamon -->
+              <div class="col">
+                <div class="card h-100">
+                    <img src="images/green-smoothie.jpg" class="card-img-top" style="height: 40vh;"  alt="Green Smoothie">
+                    <div class="card-body">
+                        <h5 class="card-title">Green Smoothie</h5>
+                        <p><strong>A refreshing smoothie packed with spinach and healthy fats.</strong></p>
+                        
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients2" role="button" aria-expanded="false" aria-controls="ingredients2">Ingredients</a>
+                        <div class="" id="ingredients2">
+                            <ul>
+                                <li>Spinach</li>
+                                <li>Almond milk</li>
+                                <li>Apple</li>
+                                <li>Flaxseeds</li>
+                            </ul>
+                        </div>
+
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions2" role="button" aria-expanded="false" aria-controls="instructions2">Instructions</a>
+                        <div class="" id="instructions2">
+                            <ol>
+                                <li>Blend all ingredients until smooth.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition2" role="button" aria-expanded="false" aria-controls="nutrition2">Nutrition</a>
+                        <div class="" id="nutrition2">
+                            <ul>
+                                <li>Calories: 110</li>
+                                <li>Protein: 3g</li>
+                                <li>Carbs: 15g</li>
+                                <li>Fat: 4g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Green Smoothie -->
+             <div class="col">
+                <div class="card h-100">
+                    <img src="images/cinnamon-oats.jpg" class="card-img-top" style="height: 40vh;"  alt="Steel-Cut Oats with Cinnamon">
+                    <div class="card-body">
+                        <h5 class="card-title">Steel-Cut Oats with Cinnamon</h5>
+                        <p><strong>Hearty and nutritious oats flavored with cinnamon and topped with nuts.</strong></p>
+                        
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients1" role="button" aria-expanded="false" aria-controls="ingredients1">Ingredients</a>
+                        <div class="" id="ingredients1">
+                            <ul>
+                                <li>Steel-cut oats</li>
+                                <li>Almond milk</li>
+                                <li>Cinnamon</li>
+                                <li>Nuts (optional)</li>
+                            </ul>
+                        </div>
+
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions1" role="button" aria-expanded="false" aria-controls="instructions1">Instructions</a>
+                        <div class="" id="instructions1">
+                            <ol>
+                                <li>Cook oats with almond milk according to package instructions.</li>
+                                <li>Stir in cinnamon.</li>
+                                <li>Top with nuts for extra crunch.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition1" role="button" aria-expanded="false" aria-controls="nutrition1">Nutrition</a>
+                        <div class="" id="nutrition1">
+                            <ul>
+                                <li>Calories: 190</li>
+                                <li>Protein: 6g</li>
+                                <li>Carbs: 28g</li>
+                                <li>Fat: 6g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Egg Muffins -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/egg-muffins.jpg" class="card-img-top" style="height: 40vh;"  alt="Egg Muffins">
+                    <div class="card-body">
+                        <h5 class="card-title">Egg Muffins</h5>
+                        <p><strong>Protein-packed egg muffins with bell peppers, onions, and turkey bacon.</strong></p>
+                        
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients3" role="button" aria-expanded="false" aria-controls="ingredients3">Ingredients</a>
+                        <div class="" id="ingredients3">
+                            <ul>
+                                <li>Eggs</li>
+                                <li>Bell peppers</li>
+                                <li>Onions</li>
+                                <li>Turkey bacon</li>
+                            </ul>
+                        </div>
+
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions3" role="button" aria-expanded="false" aria-controls="instructions3">Instructions</a>
+                        <div class="" id="instructions3">
+                            <ol>
+                                <li>Mix all ingredients in a bowl.</li>
+                                <li>Pour the mixture into a muffin tin.</li>
+                                <li>Bake at 375°F (190°C) for 20 minutes.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition3" role="button" aria-expanded="false" aria-controls="nutrition3">Nutrition</a>
+                        <div class="" id="nutrition3">
+                            <ul>
+                                <li>Calories: 80</li>
+                                <li>Protein: 6g</li>
+                                <li>Carbs: 1g</li>
+                                <li>Fat: 5g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="lunch">
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Lunch Recipes</h1>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            <!-- Recipe Card 1: Grilled Chicken Salad -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/grilled-chicken-salad.jpg" class="card-img-top" style="height: 40vh;" alt="Grilled Chicken Salad">
+                    <div class="card-body">
+                        <h5 class="card-title">Grilled Chicken Salad</h5>
+                        <p><strong>A light and healthy salad with a lean protein boost!</strong></p>
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients1" role="button" aria-expanded="false" aria-controls="ingredients1">Ingredients</a>
+                        <div class="" id="ingredients1">
+                            <ul>
+                                <li>1 boneless chicken breast</li>
+                                <li>2 cups mixed greens (spinach, arugula)</li>
+                                <li>½ cucumber, sliced</li>
+                                <li>1 tomato, diced</li>
+                                <li>1 tbsp olive oil</li>
+                                <li>Salt and pepper to taste</li>
+                                <li>1 tbsp balsamic vinegar</li>
+                            </ul>
+                        </div>
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions1" role="button" aria-expanded="false" aria-controls="instructions1">Instructions</a>
+                        <div class="" id="instructions1">
+                            <ol>
+                                <li>Season chicken breast with salt and pepper.</li>
+                                <li>Grill chicken over medium heat for 5-7 minutes per side.</li>
+                                <li>Slice grilled chicken into strips.</li>
+                                <li>Toss mixed greens, cucumber, and tomato in a bowl.</li>
+                                <li>Top with grilled chicken, drizzle with olive oil and balsamic vinegar.</li>
+                                <li>Serve immediately.</li>
+                            </ol>
+                        </div>
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition1" role="button" aria-expanded="false" aria-controls="nutrition1">Nutrition</a>
+                        <div class="" id="nutrition1">
+                            <ul>
+                                <li>Calories: 300</li>
+                                <li>Protein: 30g</li>
+                                <li>Carbs: 12g</li>
+                                <li>Fat: 15g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 2: Quinoa and Veggie Stir-Fry -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/quinoa-stir-fry.webp" class="card-img-top" style="height: 40vh;" alt="Quinoa and Veggie Stir-Fry">
+                    <div class="card-body">
+                        <h5 class="card-title">Quinoa and Veggie Stir-Fry</h5>
+                        <p><strong>A protein-packed meal with vibrant vegetables and quinoa!</strong></p>
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients2" role="button" aria-expanded="false" aria-controls="ingredients2">Ingredients</a>
+                        <div class="" id="ingredients2">
+                            <ul>
+                                <li>1 cup cooked quinoa</li>
+                                <li>1 cup mixed bell peppers, sliced</li>
+                                <li>1 carrot, julienned</li>
+                                <li>½ cup broccoli florets</li>
+                                <li>2 tbsp soy sauce</li>
+                                <li>1 tbsp olive oil</li>
+                                <li>1 clove garlic, minced</li>
+                                <li>1 tbsp sesame seeds</li>
+                            </ul>
+                        </div>
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions2" role="button" aria-expanded="false" aria-controls="instructions2">Instructions</a>
+                        <div class="" id="instructions2">
+                            <ol>
+                                <li>Heat olive oil in a large skillet over medium heat.</li>
+                                <li>Add garlic and sauté for 1 minute until fragrant.</li>
+                                <li>Add bell peppers, carrot, and broccoli, and stir-fry for 5 minutes.</li>
+                                <li>Add cooked quinoa and soy sauce to the pan, stirring until combined.</li>
+                                <li>Top with sesame seeds and serve hot.</li>
+                            </ol>
+                        </div>
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition2" role="button" aria-expanded="false" aria-controls="nutrition2">Nutrition</a>
+                        <div class="" id="nutrition2">
+                            <ul>
+                                <li>Calories: 350</li>
+                                <li>Protein: 12g</li>
+                                <li>Carbs: 45g</li>
+                                <li>Fat: 15g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 3: Lentil Soup -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/lenticel.jpg" class="card-img-top" style="height: 40vh;" alt="Lentil Soup">
+                    <div class="card-body">
+                        <h5 class="card-title">Lentil Soup</h5>
+                        <p><strong>A hearty and warming soup packed with protein and fiber.</strong></p>
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients3" role="button" aria-expanded="false" aria-controls="ingredients3">Ingredients</a>
+                        <div class="" id="ingredients3">
+                            <ul>
+                                <li>1 cup dried lentils</li>
+                                <li>1 carrot, diced</li>
+                                <li>1 onion, chopped</li>
+                                <li>2 cloves garlic, minced</li>
+                                <li>4 cups vegetable broth</li>
+                                <li>1 tsp cumin</li>
+                                <li>Salt and pepper to taste</li>
+                            </ul>
+                        </div>
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions3" role="button" aria-expanded="false" aria-controls="instructions3">Instructions</a>
+                        <div class="" id="instructions3">
+                            <ol>
+                                <li>In a large pot, sauté onion, garlic, and carrot until soft (5 minutes).</li>
+                                <li>Add lentils, vegetable broth, cumin, salt, and pepper.</li>
+                                <li>Bring to a boil, then reduce heat and simmer for 30 minutes until lentils are tender.</li>
+                                <li>Serve warm.</li>
+                            </ol>
+                        </div>
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition3" role="button" aria-expanded="false" aria-controls="nutrition3">Nutrition</a>
+                        <div class="" id="nutrition3">
+                            <ul>
+                                <li>Calories: 220</li>
+                                <li>Protein: 14g</li>
+                                <li>Carbs: 40g</li>
+                                <li>Fat: 3g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 4: Grilled Turkey Burger -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/grilled-turkey-burger.webp" class="card-img-top" style="height: 40vh;" alt="Grilled Turkey Burger">
+                    <div class="card-body">
+                        <h5 class="card-title">Grilled Turkey Burger</h5>
+                        <p><strong>A healthy turkey burger packed with flavor!</strong></p>
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients4" role="button" aria-expanded="false" aria-controls="ingredients4">Ingredients</a>
+                        <div class="" id="ingredients4">
+                            <ul>
+                                <li>1 lb ground turkey</li>
+                                <li>1 tsp garlic powder</li>
+                                <li>1 tsp onion powder</li>
+                                <li>1 tbsp Worcestershire sauce</li>
+                                <li>Salt and pepper to taste</li>
+                                <li>Whole wheat burger buns</li>
+                                <li>Lettuce, tomato slices for topping</li>
+                            </ul>
+                        </div>
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions4" role="button" aria-expanded="false" aria-controls="instructions4">Instructions</a>
+                        <div class="" id="instructions4">
+                            <ol>
+                                <li>Mix ground turkey with garlic powder, onion powder, Worcestershire sauce, salt, and pepper.</li>
+                                <li>Form mixture into burger patties.</li>
+                                <li>Grill patties over medium heat for 5-6 minutes per side.</li>
+                                <li>Serve on whole wheat buns with lettuce and tomato slices.</li>
+                            </ol>
+                        </div>
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition4" role="button" aria-expanded="false" aria-controls="nutrition4">Nutrition</a>
+                        <div class="" id="nutrition4">
+                            <ul>
+                                <li>Calories: 250</li>
+                                <li>Protein: 30g</li>
+                                <li>Carbs: 20g</li>
+                                <li>Fat: 10g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 5 Turkey and Vegetable Wrap -->
+             <div class="col">
+                <div class="card h-100">
+                    <img src="images/turkey-hummus.jpg" class="card-img-top" style="height: 40vh;" alt="Turkey and Vegetable Wrap">
+                    <div class="card-body">
+                        <h5 class="card-title">Turkey and Vegetable Wrap</h5>
+                        <p><strong>A nutritious wrap with lean turkey and fresh vegetables wrapped in a whole wheat tortilla.</strong></p>
+                        
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients1" role="button" aria-expanded="false" aria-controls="ingredients1">Ingredients</a>
+                        <div class="" id="ingredients1">
+                            <ul>
+                                <li>Whole wheat tortilla</li>
+                                <li>Lean turkey slices</li>
+                                <li>Spinach</li>
+                                <li>Shredded carrots</li>
+                                <li>Tomato slices</li>
+                                <li>Avocado slices</li>
+                                <li>Mustard or low-fat mayo (optional)</li>
+                            </ul>
+                        </div>
+
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions1" role="button" aria-expanded="false" aria-controls="instructions1">Instructions</a>
+                        <div class="" id="instructions1">
+                            <ol>
+                                <li>Lay the tortilla flat on a surface.</li>
+                                <li>Layer the turkey, spinach, shredded carrots, tomato, and avocado in the center.</li>
+                                <li>Spread a small amount of mustard or mayo (optional) on top.</li>
+                                <li>Roll up the tortilla tightly, slice in half, and serve.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition1" role="button" aria-expanded="false" aria-controls="nutrition1">Nutrition</a>
+                        <div class="" id="nutrition1">
+                            <ul>
+                                <li>Calories: 300</li>
+                                <li>Protein: 25g</li>
+                                <li>Carbs: 30g</li>
+                                <li>Fat: 10g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe card 6 Zucchini Noodles with Pesto -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/Pesto-Zucchini-Pasta.jpg" class="card-img-top" style="height: 40vh;" alt="Zucchini Noodles with Pesto">
+                    <div class="card-body">
+                        <h5 class="card-title">Zucchini Noodles with Pesto</h5>
+                        <p><strong>A low-carb alternative to pasta made with zucchini noodles and topped with a fresh basil pesto.</strong></p>
+                        
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients2" role="button" aria-expanded="false" aria-controls="ingredients2">Ingredients</a>
+                        <div class="" id="ingredients2">
+                            <ul>
+                                <li>2 large zucchinis, spiralized</li>
+                                <li>1/4 cup pesto sauce (homemade or store-bought)</li>
+                                <li>Cherry tomatoes, halved</li>
+                                <li>Parmesan cheese (optional)</li>
+                                <li>Olive oil (for sautéing)</li>
+                            </ul>
+                        </div>
+
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions2" role="button" aria-expanded="false" aria-controls="instructions2">Instructions</a>
+                        <div class="" id="instructions2">
+                            <ol>
+                                <li>Heat a pan with a little olive oil and sauté the zucchini noodles for 2-3 minutes until tender.</li>
+                                <li>Remove from heat and toss with pesto sauce until evenly coated.</li>
+                                <li>Top with halved cherry tomatoes and a sprinkle of parmesan cheese (optional).</li>
+                                <li>Serve immediately.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition2" role="button" aria-expanded="false" aria-controls="nutrition2">Nutrition</a>
+                        <div class="" id="nutrition2">
+                            <ul>
+                                <li>Calories: 180</li>
+                                <li>Protein: 6g</li>
+                                <li>Carbs: 10g</li>
+                                <li>Fat: 14g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="dinner">
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Dinner Recipes</h1>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            <!-- Recipe Card 1: Baked Salmon with Asparagus -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/sheet-pan-baked-salmon-asparagus.webp" class="card-img-top" style="height: 40vh;" alt="Baked Salmon with Asparagus">
+                    <div class="card-body">
+                        <h5 class="card-title">Baked Salmon with Asparagus</h5>
+                        <p><strong>Delicious and healthy, perfect for a low-carb dinner!</strong></p>
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients1" role="button" aria-expanded="false" aria-controls="ingredients1">Ingredients</a>
+                        <div class="" id="ingredients1">
+                            <ul>
+                                <li>2 salmon fillets</li>
+                                <li>1 bunch asparagus, trimmed</li>
+                                <li>1 tbsp olive oil</li>
+                                <li>1 lemon, sliced</li>
+                                <li>1 tsp garlic powder</li>
+                                <li>Salt and pepper to taste</li>
+                            </ul>
+                        </div>
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions1" role="button" aria-expanded="false" aria-controls="instructions1">Instructions</a>
+                        <div class="" id="instructions1">
+                            <ol>
+                                <li>Preheat oven to 375°F (190°C).</li>
+                                <li>Place salmon fillets and asparagus on a baking sheet.</li>
+                                <li>Drizzle with olive oil, sprinkle with garlic powder, salt, and pepper.</li>
+                                <li>Top salmon with lemon slices.</li>
+                                <li>Bake for 15-20 minutes until salmon is cooked through.</li>
+                                <li>Serve with the roasted asparagus.</li>
+                            </ol>
+                        </div>
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition1" role="button" aria-expanded="false" aria-controls="nutrition1">Nutrition</a>
+                        <div class="" id="nutrition1">
+                            <ul>
+                                <li>Calories: 350</li>
+                                <li>Protein: 35g</li>
+                                <li>Carbs: 10g</li>
+                                <li>Fat: 20g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 2: Stuffed Bell Peppers -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/stuffed-bell-peppers.avif" class="card-img-top" style="height: 40vh;" alt="Stuffed Bell Peppers">
+                    <div class="card-body">
+                        <h5 class="card-title">Stuffed Bell Peppers</h5>
+                        <p><strong>A colorful and hearty meal packed with lean protein and veggies!</strong></p>
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients2" role="button" aria-expanded="false" aria-controls="ingredients2">Ingredients</a>
+                        <div class="" id="ingredients2">
+                            <ul>
+                                <li>4 bell peppers, tops cut off and seeds removed</li>
+                                <li>1 lb ground turkey or beef</li>
+                                <li>1 cup cooked quinoa or brown rice</li>
+                                <li>1 can diced tomatoes (14.5 oz)</li>
+                                <li>1 tsp cumin</li>
+                                <li>1 tsp paprika</li>
+                                <li>Salt and pepper to taste</li>
+                            </ul>
+                        </div>
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions2" role="button" aria-expanded="false" aria-controls="instructions2">Instructions</a>
+                        <div class="" id="instructions2">
+                            <ol>
+                                <li>Preheat oven to 375°F (190°C).</li>
+                                <li>Brown the ground turkey in a pan over medium heat, then stir in the cooked quinoa, tomatoes, cumin, paprika, salt, and pepper.</li>
+                                <li>Stuff each bell pepper with the mixture.</li>
+                                <li>Place stuffed peppers in a baking dish and cover with foil.</li>
+                                <li>Bake for 25-30 minutes, removing the foil halfway through.</li>
+                            </ol>
+                        </div>
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition2" role="button" aria-expanded="false" aria-controls="nutrition2">Nutrition</a>
+                        <div class="" id="nutrition2">
+                            <ul>
+                                <li>Calories: 350</li>
+                                <li>Protein: 28g</li>
+                                <li>Carbs: 30g</li>
+                                <li>Fat: 15g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 3: Zucchini Noodles with Pesto -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/Pesto-Zucchini-Pasta.jpg" class="card-img-top" style="height: 40vh;" alt="Zucchini Noodles with Pesto">
+                    <div class="card-body">
+                        <h5 class="card-title">Zucchini Noodles with Pesto</h5>
+                        <p><strong>A healthy twist on pasta with fresh pesto and zucchini noodles!</strong></p>
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients3" role="button" aria-expanded="false" aria-controls="ingredients3">Ingredients</a>
+                        <div class="" id="ingredients3">
+                            <ul>
+                                <li>4 zucchini, spiralized into noodles</li>
+                                <li>1 cup fresh basil leaves</li>
+                                <li>¼ cup pine nuts</li>
+                                <li>¼ cup Parmesan cheese</li>
+                                <li>2 cloves garlic</li>
+                                <li>¼ cup olive oil</li>
+                                <li>Salt and pepper to taste</li>
+                            </ul>
+                        </div>
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions3" role="button" aria-expanded="false" aria-controls="instructions3">Instructions</a>
+                        <div class="" id="instructions3">
+                            <ol>
+                                <li>To make pesto, blend basil, pine nuts, Parmesan, garlic, and olive oil in a food processor until smooth.</li>
+                                <li>Heat a pan over medium heat, sauté zucchini noodles for 2-3 minutes until tender.</li>
+                                <li>Toss the zucchini noodles with pesto, season with salt and pepper, and serve immediately.</li>
+                            </ol>
+                        </div>
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition3" role="button" aria-expanded="false" aria-controls="nutrition3">Nutrition</a>
+                        <div class="" id="nutrition3">
+                            <ul>
+                                <li>Calories: 250</li>
+                                <li>Protein: 6g</li>
+                                <li>Carbs: 15g</li>
+                                <li>Fat: 20g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 4: Cauliflower Rice Stir Fry -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/Cauliflower-Fried-Rice.jpg" class="card-img-top" style="height: 40vh;" alt="Cauliflower Rice Stir Fry">
+                    <div class="card-body">
+                        <h5 class="card-title">Cauliflower Rice Stir Fry</h5>
+                        <p><strong>A low-carb and healthy stir fry packed with veggies!</strong></p>
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients4" role="button" aria-expanded="false" aria-controls="ingredients4">Ingredients</a>
+                        <div class="" id="ingredients4">
+                            <ul>
+                                <li>1 head of cauliflower, grated into rice-size pieces</li>
+                                <li>1 cup mixed veggies (peas, carrots, bell peppers)</li>
+                                <li>2 eggs, scrambled</li>
+                                <li>2 tbsp soy sauce</li>
+                                <li>1 tbsp sesame oil</li>
+                                <li>1 clove garlic, minced</li>
+                            </ul>
+                        </div>
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions4" role="button" aria-expanded="false" aria-controls="instructions4">Instructions</a>
+                        <div class="" id="instructions4">
+                            <ol>
+                                <li>Heat sesame oil in a pan, sauté garlic and veggies for 3-4 minutes.</li>
+                                <li>Add cauliflower rice, stir-fry for 5 minutes until tender.</li>
+                                <li>Push mixture to the side, scramble eggs in the pan, then combine with the rice.</li>
+                                <li>Add soy sauce and cook for another 2 minutes.</li>
+                            </ol>
+                        </div>
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition4" role="button" aria-expanded="false" aria-controls="nutrition4">Nutrition</a>
+                        <div class="" id="nutrition4">
+                            <ul>
+                                <li>Calories: 180</li>
+                                <li>Protein: 10g</li>
+                                <li>Carbs: 15g</li>
+                                <li>Fat: 10g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 5: Grilled Shrimp Tacos -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/Grilled-Shrimp-Tacos.jpg" class="card-img-top" style="height: 40vh;" alt="Grilled Shrimp Tacos">
+                    <div class="card-body">
+                        <h5 class="card-title">Grilled Shrimp Tacos</h5>
+                        <p><strong>Fresh and flavorful shrimp tacos with a tangy sauce!</strong></p>
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients5" role="button" aria-expanded="false" aria-controls="ingredients5">Ingredients</a>
+                        <div class="" id="ingredients5">
+                            <ul>
+                                <li>1 lb shrimp, peeled and deveined</li>
+                                <li>1 tbsp olive oil</li>
+                                <li>1 tsp chili powder</li>
+                                <li>1 tsp cumin</li>
+                                <li>Soft corn tortillas</li>
+                                <li>Shredded cabbage</li>
+                                <li>Lime wedges</li>
+                            </ul>
+                        </div>
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions5" role="button" aria-expanded="false" aria-controls="instructions5">Instructions</a>
+                        <div class="" id="instructions5">
+                            <ol>
+                                <li>Preheat grill to medium-high heat.</li>
+                                <li>Toss shrimp with olive oil, chili powder, cumin, salt, and pepper.</li>
+                                <li>Grill shrimp for 2-3 minutes per side until cooked through.</li>
+                                <li>Serve shrimp in corn tortillas with shredded cabbage and a squeeze of lime.</li>
+                            </ol>
+                        </div>
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition5" role="button" aria-expanded="false" aria-controls="nutrition5">Nutrition</a>
+                        <div class="" id="nutrition5">
+                            <ul>
+                                <li>Calories: 250</li>
+                                <li>Protein: 25g</li>
+                                <li>Carbs: 20g</li>
+                                <li>Fat: 10g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 6: Grilled Chicken with Sweet Potato Fries -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/grilled-chicken-salad.jpg" class="card-img-top" style="height: 40vh;" alt="Grilled Chicken with Sweet Potato Fries">
+                    <div class="card-body">
+                        <h5 class="card-title">Grilled Chicken with Sweet Potato Fries</h5>
+                        <p><strong>A balanced and flavorful dinner with lean protein and healthy carbs!</strong></p>
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients6" role="button" aria-expanded="false" aria-controls="ingredients6">Ingredients</a>
+                        <div class="" id="ingredients6">
+                            <ul>
+                                <li>2 chicken breasts</li>
+                                <li>2 medium sweet potatoes, cut into fries</li>
+                                <li>2 tbsp olive oil</li>
+                                <li>1 tsp paprika</li>
+                                <li>Salt and pepper to taste</li>
+                            </ul>
+                        </div>
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions6" role="button" aria-expanded="false" aria-controls="instructions6">Instructions</a>
+                        <div class="" id="instructions6">
+                            <ol>
+                                <li>Preheat oven to 400°F (200°C).</li>
+                                <li>Coat sweet potato fries with olive oil, paprika, salt, and pepper, then bake for 25-30 minutes.</li>
+                                <li>Grill chicken breasts for 6-7 minutes per side until cooked through.</li>
+                                <li>Serve grilled chicken with sweet potato fries.</li>
+                            </ol>
+                        </div>
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition6" role="button" aria-expanded="false" aria-controls="nutrition6">Nutrition</a>
+                        <div class="" id="nutrition6">
+                            <ul>
+                                <li>Calories: 400</li>
+                                <li>Protein: 35g</li>
+                                <li>Carbs: 40g</li>
+                                <li>Fat: 15g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="desserts">
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Dessert Recipes</h1>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            <!-- Recipe Card 1: Almond Flour Cookies -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/Almond-Flour-Cookies.jpg" class="card-img-top" style="height: 40vh;" alt="Almond Flour Cookies">
+                    <div class="card-body">
+                        <h5 class="card-title">Almond Flour Cookies</h5>
+                        <p><strong>Delicious, low-carb cookies made with almond flour for a healthy twist!</strong></p>
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients1" role="button" aria-expanded="false" aria-controls="ingredients1">Ingredients</a>
+                        <div class="" id="ingredients1">
+                            <ul>
+                                <li>2 cups almond flour</li>
+                                <li>¼ cup erythritol or sweetener of choice</li>
+                                <li>1 egg</li>
+                                <li>1 tsp vanilla extract</li>
+                                <li>½ tsp baking soda</li>
+                                <li>Pinch of salt</li>
+                            </ul>
+                        </div>
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions1" role="button" aria-expanded="false" aria-controls="instructions1">Instructions</a>
+                        <div class="" id="instructions1">
+                            <ol>
+                                <li>Preheat the oven to 350°F (175°C) and line a baking sheet with parchment paper.</li>
+                                <li>Mix almond flour, erythritol, baking soda, and salt in a bowl.</li>
+                                <li>In another bowl, whisk the egg and vanilla extract, then combine with dry ingredients.</li>
+                                <li>Shape dough into small balls and flatten them on the baking sheet.</li>
+                                <li>Bake for 10-12 minutes until golden brown.</li>
+                            </ol>
+                        </div>
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition1" role="button" aria-expanded="false" aria-controls="nutrition1">Nutrition</a>
+                        <div class="" id="nutrition1">
+                            <ul>
+                                <li>Calories: 120</li>
+                                <li>Protein: 4g</li>
+                                <li>Carbs: 4g</li>
+                                <li>Fat: 10g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 2: Chia Seed Pudding -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/chia-seeds-with-almond-milk.jpg" class="card-img-top" style="height: 40vh;" alt="Chia Seed Pudding">
+                    <div class="card-body">
+                        <h5 class="card-title">Chia Seed Pudding</h5>
+                        <p><strong>A creamy, nutrient-packed dessert that’s perfect for a healthy treat!</strong></p>
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients2" role="button" aria-expanded="false" aria-controls="ingredients2">Ingredients</a>
+                        <div class="" id="ingredients2">
+                            <ul>
+                                <li>3 tbsp chia seeds</li>
+                                <li>1 cup unsweetened almond milk</li>
+                                <li>1 tsp vanilla extract</li>
+                                <li>1 tbsp maple syrup (or stevia for a lower carb option)</li>
+                                <li>Fresh berries for topping</li>
+                            </ul>
+                        </div>
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions2" role="button" aria-expanded="false" aria-controls="instructions2">Instructions</a>
+                        <div class="" id="instructions2">
+                            <ol>
+                                <li>In a bowl, mix chia seeds, almond milk, vanilla, and maple syrup.</li>
+                                <li>Cover and refrigerate for at least 4 hours or overnight.</li>
+                                <li>Stir the pudding well before serving, then top with fresh berries.</li>
+                            </ol>
+                        </div>
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition2" role="button" aria-expanded="false" aria-controls="nutrition2">Nutrition</a>
+                        <div class="" id="nutrition2">
+                            <ul>
+                                <li>Calories: 150</li>
+                                <li>Protein: 5g</li>
+                                <li>Carbs: 12g</li>
+                                <li>Fat: 8g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 3: Coconut Flour Brownies -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/coconut-flour-brownies-3.jpg" class="card-img-top" style="height: 40vh;" alt="Coconut Flour Brownies">
+                    <div class="card-body">
+                        <h5 class="card-title">Coconut Flour Brownies</h5>
+                        <p><strong>Low-carb, gluten-free brownies that satisfy your chocolate cravings!</strong></p>
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients3" role="button" aria-expanded="false" aria-controls="ingredients3">Ingredients</a>
+                        <div class="" id="ingredients3">
+                            <ul>
+                                <li>¼ cup coconut flour</li>
+                                <li>¼ cup cocoa powder</li>
+                                <li>3 eggs</li>
+                                <li>½ cup butter, melted</li>
+                                <li>½ cup erythritol or sweetener of choice</li>
+                                <li>1 tsp vanilla extract</li>
+                                <li>1 tsp baking powder</li>
+                            </ul>
+                        </div>
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions3" role="button" aria-expanded="false" aria-controls="instructions3">Instructions</a>
+                        <div class="" id="instructions3">
+                            <ol>
+                                <li>Preheat the oven to 350°F (175°C) and grease a baking pan.</li>
+                                <li>Mix all ingredients in a bowl until smooth.</li>
+                                <li>Pour the batter into the baking pan and bake for 20-25 minutes.</li>
+                                <li>Let cool before cutting into squares and serving.</li>
+                            </ol>
+                        </div>
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition3" role="button" aria-expanded="false" aria-controls="nutrition3">Nutrition</a>
+                        <div class="" id="nutrition3">
+                            <ul>
+                                <li>Calories: 180</li>
+                                <li>Protein: 6g</li>
+                                <li>Carbs: 6g</li>
+                                <li>Fat: 14g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 4: Avocado Chocolate Mousse -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/Chocolate-Avocado-Mousse-Recipe.jpg" class="card-img-top" style="height: 40vh;" alt="Avocado Chocolate Mousse">
+                    <div class="card-body">
+                        <h5 class="card-title">Avocado Chocolate Mousse</h5>
+                        <p><strong>A creamy, decadent mousse that’s rich in healthy fats!</strong></p>
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients4" role="button" aria-expanded="false" aria-controls="ingredients4">Ingredients</a>
+                        <div class="" id="ingredients4">
+                            <ul>
+                                <li>2 ripe avocados</li>
+                                <li>¼ cup cocoa powder</li>
+                                <li>2 tbsp maple syrup</li>
+                                <li>1 tsp vanilla extract</li>
+                                <li>¼ cup almond milk</li>
+                            </ul>
+                        </div>
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions4" role="button" aria-expanded="false" aria-controls="instructions4">Instructions</a>
+                        <div class="" id="instructions4">
+                            <ol>
+                                <li>Blend avocados, cocoa powder, maple syrup, vanilla, and almond milk until smooth.</li>
+                                <li>Refrigerate for at least 1 hour before serving.</li>
+                            </ol>
+                        </div>
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition4" role="button" aria-expanded="false" aria-controls="nutrition4">Nutrition</a>
+                        <div class="" id="nutrition4">
+                            <ul>
+                                <li>Calories: 220</li>
+                                <li>Protein: 3g</li>
+                                <li>Carbs: 15g</li>
+                                <li>Fat: 18g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 5: Berry Sorbet -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/Berry-Sorbet.jpg" class="card-img-top" style="height: 40vh;" alt="Berry Sorbet">
+                    <div class="card-body">
+                        <h5 class="card-title">Berry Sorbet</h5>
+                        <p><strong>A refreshing, naturally sweet dessert made with fresh berries!</strong></p>
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients5" role="button" aria-expanded="false" aria-controls="ingredients5">Ingredients</a>
+                        <div class="" id="ingredients5">
+                            <ul>
+                                <li>2 cups mixed berries (strawberries, raspberries, blueberries)</li>
+                                <li>½ cup water</li>
+                                <li>1 tbsp honey or sweetener of choice</li>
+                            </ul>
+                        </div>
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions5" role="button" aria-expanded="false" aria-controls="instructions5">Instructions</a>
+                        <div class="" id="instructions5">
+                            <ol>
+                                <li>Blend berries, water, and honey until smooth.</li>
+                                <li>Pour mixture into a shallow dish and freeze for 2-3 hours.</li>
+                                <li>Scrape with a fork to create a sorbet texture before serving.</li>
+                            </ol>
+                        </div>
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition5" role="button" aria-expanded="false" aria-controls="nutrition5">Nutrition</a>
+                        <div class="" id="nutrition5">
+                            <ul>
+                                <li>Calories: 100</li>
+                                <li>Protein: 1g</li>
+                                <li>Carbs: 26g</li>
+                                <li>Fat: 1g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 6: Coconut Macaroons -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/coconut-macaroons.webp" class="card-img-top" style="height: 40vh;" alt="Coconut Macaroons">
+                    <div class="card-body">
+                        <h5 class="card-title">Coconut Macaroons</h5>
+                        <p><strong>Chewy, coconutty treats perfect for a light dessert!</strong></p>
+                        <!-- Collapsible Ingredients -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#ingredients6" role="button" aria-expanded="false" aria-controls="ingredients6">Ingredients</a>
+                        <div class="" id="ingredients6">
+                            <ul>
+                                <li>2 cups shredded unsweetened coconut</li>
+                                <li>2 egg whites</li>
+                                <li>½ cup erythritol or sweetener of choice</li>
+                                <li>1 tsp vanilla extract</li>
+                            </ul>
+                        </div>
+                        <!-- Collapsible Instructions -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#instructions6" role="button" aria-expanded="false" aria-controls="instructions6">Instructions</a>
+                        <div class="" id="instructions6">
+                            <ol>
+                                <li>Preheat the oven to 350°F (175°C) and line a baking sheet with parchment paper.</li>
+                                <li>Mix all ingredients in a bowl until well combined.</li>
+                                <li>Shape into small mounds and place on the baking sheet.</li>
+                                <li>Bake for 12-15 minutes until golden brown.</li>
+                            </ol>
+                        </div>
+                        <!-- Collapsible Nutrition -->
+                        <a class="btn btn-link" data-bs-toggle="collapse" href="#nutrition6" role="button" aria-expanded="false" aria-controls="nutrition6">Nutrition</a>
+                        <div class="" id="nutrition6">
+                            <ul>
+                                <li>Calories: 160</li>
+                                <li>Protein: 4g</li>
+                                <li>Carbs: 5g</li>
+                                <li>Fat: 12g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+   </section>
+   <footer>
+      <div class="container">
+        <div class="quick-links">
+          <h1>Quick Links</h1>
+          <div class="links">
+            <a href="about_diabeties.html">About Diabetes</a>
+            <a href="food&nutrition.html">Food & Nutrition</a>
+            <a href="health&welnness.html">Health & Wellness</a>
+            <a href="book-doctor.php">Book A Doctor</a>
+            <a href="recipe.html">Get a Recipe</a>
+            <a href="cooking.html">Cooking Class</a>
+          </div>
+        </div>
+        <div class="contact-us">
+          <h1>Contact Us</h1>
+          <div class="reach">
+          <div class="phone">
+            <h2>Emergency contacts</h2>
+            <ul>
+              <li>+254 780774157</li>
+              <li>+254 114857302</li>
+            </ul>
+          </div>
+          <div class="emails">
+            <h2>Emails</h2>
+            <ul>
+              <li>kamaueunice384@gmail.com</li>
+              <li>kelvinnjogu020@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class="social-media">
+          <h1>Social Media</h1>
+          <div class="social-links">
+        <div class="youtube">
+          <h3>Instagram</h3>
+          <a href="https://www.instagram.com/yunah_kui/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+        <div class="twitter">
+          <h3>Twitter</h3>
+          <a href="https://x.com/Yunah_kui"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+        </div>
+        <div class="tiktok">
+          <h3>Tiktok</h3>
+          <a href="https://www.tiktok.com/@eunice_kui"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+        </div>
+        <div class="facebook">
+          <h3>Facebook</h3>
+          <a href="https://www.facebook.com/profile.php?id=100070669671782"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </div>
+      </div>
+        </div>
+      </div>
+      <hr />
+      <p>Copyright © 2024 | Nutrition Delights | All rights reserved |</p>
+    </footer>
+</body>
+</html

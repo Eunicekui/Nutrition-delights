@@ -1,0 +1,1057 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #F3F4F5;
+}
+header {
+  width: 100vw;
+  height: 10vh;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  width: 100vw;
+  align-items: center;
+  background-color: #d9fae8;
+}
+header nav .nav-links {
+  width: 55vw;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+}
+header nav .nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+header .logo img {
+  width: 5vw;
+  height: 10vh;
+  margin-left: 30px;
+}
+.hero-home {
+  width: 100vw;
+  height: 80vh;
+  background-image: url(../images/doctor.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 30px;
+}
+.hero-home .title {
+  text-align: center;
+  height: 60vh;
+  width: 100%;
+  padding-top: 100px;
+  opacity: 100%;
+}
+.hero-home .title h1 {
+  line-height: 60px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+.hero-home .title h2 {
+  font-size: 35px;
+  font-weight: 500;
+}
+.hero-home .title .button   {
+  background-color: #00bfe7;
+  color: black;
+  width: 12vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  border-radius: 20px;
+}
+.hero-home .title .button:hover {
+  background-color: #d9fae8;
+}
+.hero-home .title .button a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+}
+p {
+  line-height: 28px;
+}
+.primary-btn {
+  display: inline-block;
+  font-size: 15px;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  padding: 14px 52px 12px;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+}
+.primary-btn:hover:before {
+  height: 100%;
+  width: 90%;
+  color: #ddd;
+}
+.primary-btn:hover:after {
+  height: 100%;
+  width: 90%;
+  color: #ddd;
+}
+.primary-btn:before {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  height: 30px;
+  width: 30px;
+  border-left: 2px solid #00bfe7;
+  border-top: 2px solid #00bfe7;
+  content: "";
+  z-index: -1;
+  -webkit-transition: all, 0.7s;
+  -o-transition: all, 0.7s;
+  transition: all, 0.7s;
+}
+.primary-btn:after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 30px;
+  width: 30px;
+  border-right: 2px solid #00bfe7;
+  border-bottom: 2px solid #00bfe7;
+  content: "";
+  z-index: -1;
+  -webkit-transition: all, 0.7s;
+  -o-transition: all, 0.7s;
+  transition: all, 0.7s;
+}
+/*ABOUT DIABETES SECTION*/
+.hero-about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 80vh;
+}
+.hero-about .contents {
+  width: 40vw;
+}
+.hero-about .contents h1 {
+  padding-bottom: 10px;
+}
+.hero-about .contents h2 {
+  padding-bottom: 10px;
+}
+.hero-about img {
+  width: 40vw;
+  height: 60vh;
+  border-radius: 10px;
+}
+.about .diabetes {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d9fae8;
+  padding-top: 40px;
+}
+.about .diabetes h1 {
+  padding-bottom: 10px;
+}
+.about .diabetes ul {
+  width: 70%;
+}
+.about .diabetes ul li {
+  line-height: 28px;
+}
+.about .type1 .introduction {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+}
+.about .type1 .introduction img {
+  width: 40vw;
+  height: 50vh;
+  border-radius: 10px;
+}
+.about .type1 .introduction .contents {
+  width: 40vw;
+}
+.about .type1 .introduction .contents h1 {
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+.about .type1 .signs {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d9fae8;
+  padding-top: 40px;
+}
+.about .type1 .signs h2 {
+  padding-bottom: 10px;
+}
+.about .type1 .signs ul {
+  width: 70%;
+  padding-bottom: 40px;
+}
+.about .type1 .signs li {
+  line-height: 28px;
+}
+.about .type2 .introduction {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+}
+.about .type2 .introduction img {
+  width: 40vw;
+  height: 55vh;
+  border-radius: 10px;
+}
+.about .type2 .introduction .contents {
+  width: 40vw;
+}
+.about .type2 .introduction .contents h1 {
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+.about .type2 .signs {
+  width: 100vw;
+  height: 105vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d9fae8;
+  padding-top: 40px;
+}
+.about .type2 .signs h2 {
+  padding-bottom: 10px;
+}
+.about .type2 .signs ul {
+  width: 70%;
+  padding-bottom: 40px;
+}
+.about .type2 .signs li {
+  line-height: 28px;
+}
+.about .resources {
+  width: 100vw;
+  height: 120vh;
+  padding-top: 30px;
+}
+.about .resources h1 {
+  font-size: 30px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.about .resources .container {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 0;
+  margin-left: 0;
+  width: 100vw;
+  gap: 50px;
+}
+.about .resources .container .driving {
+  width: 30vw;
+  height: 95vh;
+  padding-left: 20px;
+}
+.about .resources .container .driving img {
+  width: 30vw;
+  height: 40vh;
+}
+.about .resources .container .driving .contents h1 {
+  font-size: 30px;
+  padding-bottom: 6px;
+  padding-left: 0;
+  padding-top: 10px;
+}
+.about .resources .container .driving .contents p {
+  padding-bottom: 25px;
+}
+.about .resources .container .pregnancy {
+  width: 30vw;
+  height: 95vh;
+}
+.about .resources .container .pregnancy img {
+  width: 30vw;
+  height: 40vh;
+}
+.about .resources .container .pregnancy .contents h1 {
+  font-size: 30px;
+  padding-bottom: 6px;
+  padding-left: 0;
+  padding-top: 10px;
+}
+.about .resources .container .pregnancy .contents p {
+  padding-bottom: 25px;
+}
+.about .resources .container .sex-life {
+  width: 30vw;
+  height: 95vh;
+}
+.about .resources .container .sex-life img {
+  width: 30vw;
+  height: 40vh;
+}
+.about .resources .container .sex-life .contents h1 {
+  font-size: 30px;
+  padding-bottom: 6px;
+  padding-left: 0;
+  padding-top: 10px;
+}
+.about .resources .container .sex-life .contents p {
+  padding-bottom: 25px;
+}
+/*FOOD AND NUTRITION SECTION*/
+.hero-food {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+}
+.hero-food .contents {
+  width: 40vw;
+}
+.hero-food .contents h1 {
+  padding-bottom: 10px;
+}
+.hero-food .contents h2 {
+  padding-bottom: 10px;
+}
+.hero-food img {
+  width: 40vw;
+  height: 50vh;
+  border-radius: 10px;
+}
+main .fun-facts {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d9fae8;
+  padding-top: 40px;
+}
+main .fun-facts h1 {
+  padding-bottom: 10px;
+}
+main .fun-facts ul {
+  width: 70%;
+}
+main .fun-facts ul li {
+  line-height: 28px;
+}
+main .food-nutrition .food {
+  width: 100vw;
+  height: 145vh;
+}
+main .food-nutrition .food .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+  gap: 70px;
+}
+main .food-nutrition .food .container img {
+  width: 40vw;
+  height: 50vh;
+  border-radius: 10px;
+}
+main .food-nutrition .food .container .contents {
+  width: 40vw;
+}
+main .food-nutrition .food .container .contents h1 {
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+main .food-nutrition .food .types {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  background-color: #d9fae8;
+}
+main .food-nutrition .food .types h2 {
+  padding-bottom: 10px;
+}
+main .food-nutrition .food .types ul {
+  width: 70%;
+  padding-bottom: 40px;
+}
+main .food-nutrition .food .types li {
+  line-height: 28px;
+}
+main .food-nutrition .nutrition {
+  width: 100vw;
+  height: 145vh;
+}
+main .food-nutrition .nutrition .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+  gap: 70px;
+}
+main .food-nutrition .nutrition .container img {
+  width: 40vw;
+  height: 50vh;
+  border-radius: 10px;
+}
+main .food-nutrition .nutrition .container .contents {
+  width: 40vw;
+}
+main .food-nutrition .nutrition .container .contents h1 {
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+main .food-nutrition .nutrition .types {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d9fae8;
+  padding-top: 40px;
+}
+main .food-nutrition .nutrition .types h1 {
+  padding-bottom: 10px;
+}
+main .food-nutrition .nutrition .types ul {
+  width: 70%;
+  padding-bottom: 40px;
+}
+main .food-nutrition .nutrition .types li {
+  line-height: 28px;
+}
+main .food-nutrition .cooking {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 60vh;
+}
+main .food-nutrition .cooking img {
+  width: 40vw;
+  height: 50vh;
+  border-radius: 10px;
+}
+main .food-nutrition .cooking .contents {
+  width: 40vw;
+}
+main .food-nutrition .cooking .contents h1 {
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+main .food-nutrition .cooking .contents p {
+  padding-bottom: 20px;
+}
+main .food-nutrition .cooking .contents .btn-cooking {
+  width: 12vw;
+  height: 6vh;
+  background-color: #BB2D3B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
+main .food-nutrition .cooking .contents .btn-cooking a {
+  text-decoration: none;
+  color: white;
+}
+main .food-nutrition .cooking .contents .btn-cooking:hover {
+  background-color: #00bfe7;
+}
+main .food-nutrition .recipe {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 60vh;
+}
+main .food-nutrition .recipe img {
+  width: 40vw;
+  height: 50vh;
+  border-radius: 10px;
+}
+main .food-nutrition .recipe .contents {
+  width: 40vw;
+}
+main .food-nutrition .recipe .contents h1 {
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+main .food-nutrition .recipe .contents p {
+  padding-bottom: 20px;
+}
+main .food-nutrition .recipe .contents .btn-recipe {
+  width: 10vw;
+  height: 6vh;
+  background-color: #BB2D3B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
+main .food-nutrition .recipe .contents .btn-recipe a {
+  text-decoration: none;
+  color: white;
+}
+main .food-nutrition .recipe .contents .btn-recipe:hover {
+  background-color: #00bfe7;
+}
+/*HEALTH & WELLNESS SECTION*/
+.hero-health {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+}
+.hero-health .contents {
+  width: 40vw;
+}
+.hero-health .contents h1 {
+  padding-bottom: 10px;
+}
+.hero-health .contents h2 {
+  padding-bottom: 10px;
+}
+.hero-health img {
+  width: 40vw;
+  height: 50vh;
+  border-radius: 10px;
+}
+main .wellness {
+  width: 100vw;
+  height: 550vh;
+}
+main .wellness .fitness {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+}
+main .wellness .fitness img {
+  width: 40vw;
+  height: 50vh;
+  border-radius: 10px;
+}
+main .wellness .fitness .contents {
+  width: 40vw;
+}
+main .wellness .fitness .contents h1 {
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+main .wellness .fitness-tips {
+  width: 100vw;
+  height: 87vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d9fae8;
+  padding-top: 40px;
+}
+main .wellness .fitness-tips h1 {
+  padding-bottom: 10px;
+}
+main .wellness .fitness-tips ul {
+  width: 70%;
+  padding-bottom: 40px;
+}
+main .wellness .fitness-tips li {
+  line-height: 28px;
+}
+main .wellness .exercise {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 80vh;
+}
+main .wellness .exercise img {
+  width: 40vw;
+  height: 60vh;
+  border-radius: 10px;
+}
+main .wellness .exercise .contents {
+  width: 40vw;
+}
+main .wellness .exercise .contents h1 {
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+main .wellness .exercise-tips {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d9fae8;
+  padding-top: 40px;
+}
+main .wellness .exercise-tips h1 {
+  padding-bottom: 10px;
+}
+main .wellness .exercise-tips ul {
+  width: 70%;
+  padding-bottom: 40px;
+}
+main .wellness .exercise-tips li {
+  line-height: 28px;
+}
+main .wellness .mental-health {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 85vh;
+}
+main .wellness .mental-health img {
+  width: 40vw;
+  height: 60vh;
+  border-radius: 10px;
+}
+main .wellness .mental-health .contents {
+  width: 40vw;
+}
+main .wellness .mental-health .contents h1 {
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+main .wellness .mental-health .contents p {
+  padding-bottom: 25px;
+}
+main .wellness .strategies {
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d9fae8;
+  padding-top: 40px;
+}
+main .wellness .strategies h1 {
+  padding-bottom: 10px;
+}
+main .wellness .strategies ul {
+  width: 70%;
+  padding-bottom: 40px;
+}
+main .wellness .strategies li {
+  line-height: 28px;
+}
+main .wellness .appointment {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 10px solid red;
+  width: 95vw;
+  height: 40vh;
+  margin-top: 60px;
+  padding-bottom: 100px;
+  margin-left: 30px;
+}
+main .wellness .appointment .contents {
+  width: 50vw;
+  padding-top: 100px;
+}
+main .wellness .appointment .contents h2 {
+  padding-bottom: 14px;
+}
+main .wellness .appointment .btn-therapist {
+  width: 15vw;
+  height: 6vh;
+  background-color: #BB2D3B;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  margin-top: 70px;
+}
+main .wellness .appointment .btn-therapist:hover {
+  background-color: #00bfe7;
+}
+main .wellness .appointment .btn-therapist a {
+  color: white;
+  text-decoration: none;
+}
+main .health {
+  width: 100vw;
+  height: 420vh;
+}
+main .health .medications {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 80vh;
+}
+main .health .medications img {
+  width: 40vw;
+  height: 50vh;
+  border-radius: 10px;
+}
+main .health .medications .contents {
+  width: 40vw;
+}
+main .health .medications .contents h1 {
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+main .health .medications-types {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d9fae8;
+  padding-top: 40px;
+}
+main .health .medications-types h2 {
+  padding-bottom: 10px;
+}
+main .health .medications-types ul {
+  width: 70%;
+  padding-bottom: 40px;
+}
+main .health .medications-types li {
+  line-height: 28px;
+}
+main .health .treatments {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 80vh;
+}
+main .health .treatments img {
+  width: 40vw;
+  height: 50vh;
+  border-radius: 10px;
+}
+main .health .treatments .contents {
+  width: 40vw;
+}
+main .health .treatments .contents h1 {
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+main .health .treatments-types {
+  width: 100vw;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d9fae8;
+  padding-top: 40px;
+}
+main .health .treatments-types h2 {
+  padding-bottom: 10px;
+}
+main .health .treatments-types ul {
+  width: 70%;
+  padding-bottom: 40px;
+}
+main .health .treatments-types li {
+  line-height: 28px;
+}
+main .health .doctor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 10px solid red;
+  width: 95vw;
+  height: 40vh;
+  margin: 40px 20px 20px 20px;
+}
+main .health .doctor .contents {
+  width: 50vw;
+}
+main .health .doctor .contents h2 {
+  padding-bottom: 20px;
+}
+main .health .doctor .btn-doctor {
+  width: 15vw;
+  height: 6vh;
+  background-color: #BB2D3B;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  margin-top: 50px;
+}
+main .health .doctor .btn-doctor:hover {
+  background-color: #00bfe7;
+}
+main .health .doctor .btn-doctor a {
+  color: white;
+  text-decoration: none;
+}
+/*CONTACT US SECTION*/
+ .contacts {
+  padding: 50px 120px 120px;
+  background-color: #F3F4F5;
+}
+.contacts .contents {
+  display: flex;
+}
+
+.contacts .contents .message {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  height: 70vh;
+}
+.contacts .contents form {
+  display: flex;
+  flex-direction: column;
+}
+.contacts .contents .message input {
+  height: 6vh;
+  border-radius: 10px;
+}
+.contacts .contents .message textarea {
+  height: 12vh;
+  border-radius: 10px;
+}
+.contacts .contents .message label {
+  font-size: 16px;
+  padding: 20px 0 10px;
+}
+.contacts .contents .Email {
+  padding: 80px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contacts .contents .Email a {
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+}
+.contacts .contents .Email a:hover {
+  color: #00bfe7;
+  text-decoration: underline;
+}
+.contacts .contents .Email h5 {
+  font-size: 20px;
+  text-decoration: underline;
+}
+.contacts .contents .message form button {
+  width: 15vw;
+  height: 8vh;
+  margin-top: 20px;
+  background-color: #00bfe7;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.contacts .contents .message form button:hover {
+  background-color: aqua;
+}
+/*LOGIN PAGE SECTION*/
+main .login {
+  background-image: url(../images/doctor.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 115vh;
+}
+main .login .container img {
+  width: 20vw;
+  height: 35vh;
+  margin-left: 150px;
+}
+main .login .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+main .login .container .contents {
+  width: 40vw;
+  height: 100vh;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #d9fae8;
+}
+main .login .container .contents form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .login .container .contents form h2 {
+  padding-bottom: 20px;
+}
+main .login .container .contents form label {
+  padding-bottom: 10px;
+  font-size: 17px;
+  font-weight: 800;
+  color: black;
+  text-align: left;
+}
+main .login .container .contents form input {
+  width: 20vw;
+  height: 5vh;
+}
+main .login .container .contents form p {
+  padding-top: 20px;
+}
+/*SIGN UP SECTION*/
+main .sign-up {
+  background-image: url(../images/doctor.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 160vh;
+}
+main .sign-up .container img {
+  width: 20vw;
+  height: 35vh;
+  margin-left: 150px;
+}
+main .sign-up .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+main .sign-up .container .contents {
+  width: 40vw;
+  height: 150vh;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #d9fae8;
+}
+main .sign-up .container .contents form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .sign-up .container .contents form h2 {
+  padding-bottom: 20px;
+}
+main .sign-up .container .contents form label {
+  padding-bottom: 10px;
+  font-size: 17px;
+  font-weight: 800;
+  color: black;
+  text-align: left;
+}
+main .sign-up .container .contents form input {
+  width: 20vw;
+  height: 5vh;
+}
+main .sign-up .container .contents form p {
+  padding-top: 20px;
+}
+
+/*FOOTER SECTION*/
+footer {
+  width: 100vw;
+  height: 70vh;
+  background-color: black;
+  color: white;
+}
+footer h1 {
+  font-size: 30px;
+}
+footer .container {
+  display: flex;
+  justify-content: space-around;
+  height: 55vh;
+  padding-top: 20px;
+}
+footer .container .quick-links .links {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  gap: 20px;
+}
+footer .container .quick-links .links a {
+  text-decoration: none;
+  color: white;
+}
+footer .container .quick-links .links a:hover {
+  text-decoration: underline;
+  color: #d9fae8;
+}
+footer .container .contact-us {
+  gap: 20px;
+}
+footer .container .contact-us h2 {
+  font-size: 20px;
+  padding: 10px 0 10px 0;
+}
+footer .container .contact-us .reach .phone {
+  height: 17vh;
+  gap: 20px;
+}
+footer .container .contact-us .reach .phone ul li {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+footer .container .contact-us .reach .emails {
+  height: 18vh;
+  gap: 20px;
+}
+footer .container .contact-us .reach .emails li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  padding: 0;
+}
+footer .social-media {
+  text-align: center;
+  gap: 20px;
+}
+footer .social-media .social-links h3 {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+footer .social-media .soocial-links a {
+  text-align: center;
+  color: white;
+}
+footer p {
+  text-align: center;
+  padding-top: 10px;
+}
